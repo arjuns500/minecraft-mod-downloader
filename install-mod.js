@@ -131,22 +131,22 @@ var argv = yargs(hideBin(process.argv))
     }
   )
   // Command to list all mods installed in the mc_mods.json
-  .command(
-    "list [mc_version]",
-    "List the installed mods",
-    (yargs) => {
-      yargs.positional("mc_version", {
-        type: "string",
-        describe: "Minecraft version to list for",
-      });
-    },
-    ({ mc_version }) => {
-      var moddir = join(mcpath, "mods", mc_version) + "/";
-
-      var json = JSON.parse(readFileSync(moddir + "mc_mods.json"));
-      for (const mod in json.mods) {
-        console.log(mod.name);
-      }
-    }
-  )
+  //  .command(
+  //    "list [mc_version]",
+  //    "List the installed mods",
+  //    (yargs) => {
+  //      yargs.positional("mc_version", {
+  //        type: "string",
+  //        describe: "Minecraft version to list for",
+  //      });
+  //    },
+  //    ({ mc_version }) => {
+  //      var moddir = join(mcpath, "mods", mc_version) + "/";
+  //
+  //      var json = JSON.parse(readFileSync(moddir + "mc_mods.json"));
+  //      for (const mod in json.mods) {
+  //        console.log(mod.name);
+  //      }
+  //    }
+  //  )
   .help().argv;
