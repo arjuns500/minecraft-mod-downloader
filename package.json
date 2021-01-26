@@ -1,0 +1,22 @@
+{
+  "name": "minecraft-mod-downloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nodegui/packer": "^1.4.1",
+    "chalk": "^4.1.0",
+    "mc-curseforge-api": "^2.2.1",
+    "minecraft-folder-path": "^1.1.0",
+    "node-fetch": "^2.6.1",
+    "sqlite": "^4.0.19",
+    "sqlite3": "^5.0.1",
+    "yargs": "^16.2.0"
+  }
+}
